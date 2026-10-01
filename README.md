@@ -10,3 +10,7 @@ https://cuidarcomprotocolo.digitalessence.app/
 
 O projeto não exige etapa de build. Basta servir a pasta raiz em um serviço de hospedagem estática.
 
+## Entregáveis
+
+- `/produto/` — área principal com receitas equilibradas.
+- `/regeneravita/` — upsell com plano alimentar de 14 dias.
