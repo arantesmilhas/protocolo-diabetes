@@ -3,51 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Regenera Vita — Plano de 14 Dias</title>
-  <meta name="description" content="Programa prático de 14 dias para organizar refeições equilibradas e uma rotina alimentar consistente.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../entregaveis.css">
+  <meta name="theme-color" content="#173f35">
+  <title>Regenera Vita — Alimentação, receitas e diário de glicose</title>
+  <meta name="description" content="Portal educativo com plano alimentar de 14 dias, receitas, lista de compras e diário de glicose para apoiar uma rotina mais organizada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="topbar">Acesso premium • plano completo de organização alimentar</div>
-  <header class="site-header"><nav class="shell nav"><a class="brand" href="#inicio"><span class="brand-mark">14</span><span>Regenera Vita<small>Plano alimentar de 14 dias</small></span></a><div class="nav-links"><a href="#plano">Cronograma</a><a href="#compras">Lista de compras</a><a href="#preparo">Organização</a></div></nav></header>
+  <div class="notice">Conteúdo educativo para apoiar sua rotina — não substitui acompanhamento profissional.</div>
+  <header class="header">
+    <nav class="wrap nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio"><span class="brand-symbol">RV</span><span>Regenera Vita<small>Rotina alimentar inteligente</small></span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="#diario">Diário</a><a href="#plano">Plano</a><a href="#receitas">Receitas</a><a href="#compras">Compras</a><a href="#aprender">Aprender</a></div>
+    </nav>
+  </header>
+
   <main id="inicio">
-    <section class="shell hero"><div class="hero-copy"><p class="eyebrow">Seu próximo passo</p><h1>14 dias para simplificar sua alimentação.</h1><p>Um roteiro flexível para planejar refeições, organizar compras e repetir combinações equilibradas sem transformar a cozinha em uma complicação.</p><div class="hero-actions"><a class="btn" href="#plano">Começar o plano</a><button class="btn secondary" onclick="window.print()">Salvar ou imprimir</button></div></div><img src="images/prato-equilibrado.png" alt="Refeição equilibrada com vegetais, proteína e carboidratos de qualidade"></section>
-
-    <section class="shell section"><div class="section-head"><div><p class="eyebrow">Como usar</p><h2>Adapte, não improvise</h2></div><p>Escolha horários compatíveis com sua medicação e sua rotina. Trocas devem manter grupos e porções semelhantes.</p></div><div class="principles"><article class="principle"><span class="icon">①</span><strong>Leia os 14 dias</strong><span>Marque refeições que precisam de adaptação por alergia, preferência ou recomendação profissional.</span></article><article class="principle"><span class="icon">②</span><strong>Compre por 7 dias</strong><span>Dividir a lista evita desperdício e mantém verduras, frutas e proteínas mais frescas.</span></article><article class="principle"><span class="icon">③</span><strong>Observe sua resposta</strong><span>Registre refeições e glicemia conforme a orientação da sua equipe de saúde.</span></article></div></section>
-
-    <section class="shell section" id="plano">
-      <div class="section-head"><div><p class="eyebrow">Cronograma premium</p><h2>Plano de 14 dias</h2></div><button class="btn secondary" onclick="window.print()">Imprimir cronograma</button></div>
-      <div class="progress-nav"><a href="#semana1">Semana 1</a><a href="#semana2">Semana 2</a><a href="#compras">Compras</a><a href="#preparo">Preparo antecipado</a></div>
-      <h3 class="week" id="semana1">Semana 1 — criando uma base simples</h3>
-      <table class="plan-table"><thead><tr><th>Dia</th><th>Café da manhã</th><th>Almoço</th><th>Jantar</th><th>Lanche opcional</th></tr></thead><tbody>
-        <tr><td class="day">Dia 1</td><td>Omelete verde com ricota</td><td>Frango grelhado, salada variada, arroz integral e feijão</td><td>Sopa de abóbora com frango e couve</td><td>Iogurte natural com canela</td></tr>
-        <tr><td class="day">Dia 2</td><td>Iogurte, chia, morangos e nozes</td><td>Peixe assado, brócolis e lentilha</td><td>Salada morna de lentilha com folhas</td><td>Pepino com patê de atum</td></tr>
-        <tr><td class="day">Dia 3</td><td>Ovos mexidos, tomate e 1 fatia de pão integral</td><td>Carne magra acebolada, abobrinha e feijão</td><td>Omelete de cogumelos e salada</td><td>1 fruta pequena com castanhas</td></tr>
-        <tr><td class="day">Dia 4</td><td>Mingau de aveia com chia e canela</td><td>Frango cítrico com legumes e quinoa</td><td>Creme de couve-flor com frango desfiado</td><td>Iogurte sem açúcar</td></tr>
-        <tr><td class="day">Dia 5</td><td>Ricota temperada, tomate e pão integral</td><td>Sardinha, salada de repolho e feijão-fradinho</td><td>Berinjela recheada com carne magra</td><td>Palitos de cenoura e homus</td></tr>
-        <tr><td class="day">Dia 6</td><td>Omelete com brócolis</td><td>Frango assado, mix de folhas e batata-doce em porção orientada</td><td>Salada completa com ovo e grão-de-bico</td><td>Creme de cacau e abacate</td></tr>
-        <tr><td class="day">Dia 7</td><td>Iogurte com chia e frutas vermelhas</td><td>Peixe, legumes assados e arroz integral</td><td>Caldo de legumes com carne desfiada</td><td>Queijo branco e tomate</td></tr>
-      </tbody></table>
-
-      <h3 class="week" id="semana2" style="margin-top:34px">Semana 2 — variando sem perder a estrutura</h3>
-      <table class="plan-table"><thead><tr><th>Dia</th><th>Café da manhã</th><th>Almoço</th><th>Jantar</th><th>Lanche opcional</th></tr></thead><tbody>
-        <tr><td class="day">Dia 8</td><td>Ovos mexidos com espinafre</td><td>Almôndegas caseiras, couve-flor e lentilha</td><td>Salada de atum, folhas e feijão branco</td><td>1 fruta pequena e sementes</td></tr>
-        <tr><td class="day">Dia 9</td><td>Iogurte natural, aveia e canela</td><td>Frango com quiabo, salada e arroz integral</td><td>Abobrinha recheada com ricota</td><td>Vegetais com patê de atum</td></tr>
-        <tr><td class="day">Dia 10</td><td>Omelete de tomate e ervas</td><td>Peixe ensopado, repolho e feijão</td><td>Sopa de abóbora com frango</td><td>Nozes e iogurte natural</td></tr>
-        <tr><td class="day">Dia 11</td><td>Ricota, pepino e pão integral</td><td>Carne magra, berinjela e grão-de-bico</td><td>Salada morna de lentilha</td><td>Morangos com chia</td></tr>
-        <tr><td class="day">Dia 12</td><td>Mingau de aveia com cacau</td><td>Frango cítrico, brócolis e quinoa</td><td>Omelete verde com ricota</td><td>Queijo branco e tomate</td></tr>
-        <tr><td class="day">Dia 13</td><td>Iogurte, chia e nozes</td><td>Sardinha assada, abobrinha e feijão-fradinho</td><td>Creme de couve-flor e carne desfiada</td><td>1 fruta pequena</td></tr>
-        <tr><td class="day">Dia 14</td><td>Ovos, tomate e folhas</td><td>Prato favorito do plano seguindo ½ + ¼ + ¼</td><td>Salada completa com proteína e leguminosa</td><td>Creme de abacate em porção pequena</td></tr>
-      </tbody></table>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="pill">Seu portal de apoio diário</span>
+        <h1>Comer bem pode ser mais <em>simples</em> do que parece.</h1>
+        <p>Organize refeições, registre suas medições e aprenda a montar escolhas equilibradas — com ferramentas práticas para usar todos os dias.</p>
+        <div class="actions"><a class="button" href="#diario">Registrar glicose</a><a class="button ghost" href="#plano">Ver plano de 14 dias</a></div>
+        <div class="hero-points"><span>✓ Sem dietas radicais</span><span>✓ Conteúdo fácil de aplicar</span><span>✓ Dados salvos no seu aparelho</span></div>
+      </div>
+      <div class="hero-visual"><img src="images/prato-equilibrado.png" alt="Prato colorido com vegetais, proteína e carboidrato integral"><div class="float-card"><strong>½ + ¼ + ¼</strong><span>Um jeito visual de montar o prato</span></div></div>
     </section>
 
-    <section class="shell section" id="compras"><div class="section-head"><div><p class="eyebrow">Lista-base</p><h2>Compras para uma semana</h2></div><p>As quantidades dependem do número de pessoas e das porções recomendadas. Use a lista como conferência, não como prescrição.</p></div><div class="checklist"><article class="panel"><h3>Hortifruti</h3><ul><li>Folhas variadas</li><li>Brócolis e couve-flor</li><li>Abobrinha e berinjela</li><li>Tomate, pepino e cenoura</li><li>Abóbora e couve</li><li>Limão e frutas vermelhas</li><li>Alho, cebola e ervas</li></ul></article><article class="panel"><h3>Proteínas</h3><ul><li>Ovos</li><li>Peito de frango</li><li>Peixe e sardinha</li><li>Carne bovina magra</li><li>Atum em água</li><li>Ricota ou queijo branco</li><li>Iogurte natural sem açúcar</li></ul></article><article class="panel"><h3>Despensa</h3><ul><li>Feijão e lentilha</li><li>Grão-de-bico</li><li>Arroz integral ou quinoa</li><li>Aveia e chia</li><li>Nozes ou castanhas</li><li>Cacau 100%</li><li>Azeite e especiarias</li></ul></article></div></section>
+    <section class="section wrap" id="diario">
+      <div class="section-heading"><div><span class="kicker">Ferramenta prática</span><h2>Diário de glicose</h2></div><p>Registre medições, visualize tendências e leve informações mais organizadas para conversar com sua equipe de saúde.</p></div>
+      <div class="privacy-note">🔒 Seus registros ficam apenas neste navegador. Eles não são enviados para nenhum servidor.</div>
+      <div class="dashboard">
+        <form id="glucose-form" class="card form-card">
+          <h3>Nova medição</h3>
+          <div class="field-grid">
+            <label class="wide">Valor da glicose<div class="input-pair"><input id="glucose-value" type="number" step="0.1" min="1" required placeholder="Ex.: 105"><select id="glucose-unit" aria-label="Unidade"><option value="mg">mg/dL</option><option value="mmol">mmol/L</option></select></div></label>
+            <label>Momento<select id="glucose-context" required><option value="Jejum">Em jejum</option><option value="Antes da refeição">Antes da refeição</option><option value="2h após refeição">2h após refeição</option><option value="Ao deitar">Ao deitar</option><option value="Outro">Outro momento</option></select></label>
+            <label>Data e hora<input id="glucose-datetime" type="datetime-local" required></label>
+            <label class="wide">Observação opcional<input id="glucose-note" maxlength="80" placeholder="Ex.: caminhada após o almoço"></label>
+          </div>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+          <button class="button full" type="submit">Salvar medição</button>
+        </form>
 
-    <section class="shell section" id="preparo"><div class="section-head"><div><p class="eyebrow">60 minutos de organização</p><h2>Deixe a semana encaminhada</h2></div></div><div class="recipe-grid"><article class="card"><h3>1. Forno trabalhando</h3><p>Asse duas assadeiras: uma com frango ou peixe e outra com abobrinha, berinjela, brócolis e couve-flor. Tempere de formas diferentes para evitar monotonia.</p></article><article class="card"><h3>2. Panela-base</h3><p>Cozinhe uma leguminosa e um grão integral. Resfrie rapidamente, divida em porções e conserve conforme boas práticas de segurança alimentar.</p></article><article class="card"><h3>3. Vegetais prontos</h3><p>Higienize e seque folhas. Corte vegetais crus para dois ou três dias, armazenando em recipientes bem fechados.</p></article><article class="card"><h3>4. Plano visível</h3><p>Escolha as refeições dos próximos três dias e anote substituições. Deixe opções simples para os dias com pouco tempo.</p></article></div></section>
+        <div class="card trend-card">
+          <div class="card-title"><div><span class="kicker">Últimos registros</span><h3>Sua tendência</h3></div><span id="trend-label" class="trend-label">Sem dados</span></div>
+          <div class="stats"><div><strong id="stat-average">—</strong><span>Média</span></div><div><strong id="stat-min">—</strong><span>Menor</span></div><div><strong id="stat-max">—</strong><span>Maior</span></div><div><strong id="stat-count">0</strong><span>Registros</span></div></div>
+          <div id="chart-empty" class="chart-empty">Adicione pelo menos duas medições para visualizar o gráfico.</div>
+          <svg id="glucose-chart" class="chart" viewBox="0 0 680 240" role="img" aria-label="Gráfico das últimas medições"></svg>
+        </div>
+      </div>
 
-    <section class="shell section"><div class="safety"><strong>Segurança e acompanhamento</strong>Este programa não prescreve quantidade de carboidrato, calorias ou dose de medicamento. Se você usa insulina, sulfonilureia ou outro tratamento com risco de hipoglicemia, converse com sua equipe antes de mudar horários, porções ou padrão alimentar. Em caso de sintomas ou glicemia fora da meta, siga seu plano médico.</div></section>
+      <div class="tools-row">
+        <article class="card converter"><div><span class="kicker">Conversor rápido</span><h3>mg/dL ↔ mmol/L</h3><p>Digite em qualquer campo para converter automaticamente.</p></div><div class="convert-fields"><label>mg/dL<input id="convert-mg" type="number" min="0" placeholder="100"></label><span>⇄</span><label>mmol/L<input id="convert-mmol" type="number" min="0" step="0.1" placeholder="5,6"></label></div></article>
+        <article class="reference"><span class="kicker light">Referência geral</span><h3>Metas comuns para muitos adultos</h3><div class="reference-values"><div><strong>80–130</strong><span>mg/dL antes das refeições</span></div><div><strong>&lt; 180</strong><span>mg/dL, 1–2h após iniciar a refeição</span></div></div><p>As metas são individualizadas. Gestação, idade, medicamentos e outras condições podem exigir valores diferentes.</p></article>
+      </div>
+
+      <div class="card history-card">
+        <div class="card-title"><div><span class="kicker">Seu histórico</span><h3>Medições registradas</h3></div><div class="small-actions"><button id="export-csv" class="text-button">Baixar CSV</button><button id="clear-history" class="text-button danger">Limpar tudo</button></div></div>
+        <div class="table-wrap"><table><thead><tr><th>Data</th><th>Momento</th><th>Resultado</th><th>Observação</th><th></th></tr></thead><tbody id="history-body"><tr><td colspan="5" class="empty-row">Nenhuma medição registrada.</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="plate-section">
+      <div class="wrap plate-layout">
+        <div><span class="kicker light">Uma regra visual</span><h2>Monte um prato que trabalha a seu favor</h2><p>O método do prato ajuda a equilibrar grupos alimentares sem depender de contas complicadas. As porções exatas devem respeitar sua orientação individual.</p><ul class="feature-list"><li><strong>Comece pelos vegetais:</strong> variedade de cores e texturas.</li><li><strong>Inclua proteína:</strong> ovos, peixe, frango, carnes magras ou opções vegetais.</li><li><strong>Complete com carboidrato:</strong> feijão, lentilha, arroz integral, batata ou outro alimento planejado.</li></ul></div>
+        <div class="plate" aria-label="Diagrama do método do prato"><div class="half"><b>½</b><span>Vegetais sem amido</span></div><div class="quarter protein"><b>¼</b><span>Proteínas</span></div><div class="quarter carbs"><b>¼</b><span>Carboidratos</span></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="plano">
+      <div class="section-heading"><div><span class="kicker">Roteiro flexível</span><h2>Plano alimentar de 14 dias</h2></div><p>Use como inspiração e faça trocas equivalentes conforme suas preferências, alergias e orientação profissional.</p></div>
+      <div id="day-tabs" class="day-tabs" role="tablist" aria-label="Dias do plano"></div>
+      <article id="day-panel" class="day-panel" aria-live="polite"></article>
+      <div class="plan-footer"><button id="previous-day" class="button ghost">← Dia anterior</button><span id="plan-progress">Dia 1 de 14</span><button id="next-day" class="button">Próximo dia →</button></div>
+    </section>
+
+    <section class="section recipes-section" id="receitas">
+      <div class="wrap">
+        <div class="section-heading"><div><span class="kicker">Cozinha descomplicada</span><h2>Receitas para variar sem complicar</h2></div><p>Combinações simples, com ingredientes acessíveis e espaço para adaptar temperos e preferências.</p></div>
+        <div class="recipe-feature"><img src="images/cafe-da-manha-equilibrado.png" alt="Café da manhã equilibrado com ovos, frutas e iogurte"><div><span class="pill">Comece bem</span><h3>Café da manhã com estrutura</h3><p>Combine uma fonte de proteína, fibras e uma porção de carboidrato planejada. Isso cria uma refeição mais completa e evita depender apenas de produtos açucarados.</p></div></div>
+        <div class="accordion">
+          <details open><summary><span>01</span><div><strong>Omelete verde com ricota</strong><small>15 min • 1 porção</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> 2 ovos, ½ xícara de espinafre, 2 colheres de ricota, tomate, ervas e fio de azeite.</p><p><b>Preparo:</b> bata os ovos, misture os ingredientes e cozinhe em frigideira antiaderente até firmar. Sirva com folhas.</p></div></details>
+          <details><summary><span>02</span><div><strong>Frango cítrico com legumes</strong><small>35 min • 4 porções</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> peito de frango, limão, alho, páprica, abobrinha, cenoura e brócolis.</p><p><b>Preparo:</b> tempere, distribua em assadeira e asse até dourar. Divida em porções para a semana.</p></div></details>
+          <details><summary><span>03</span><div><strong>Salada morna de lentilha</strong><small>25 min • 3 porções</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> lentilha cozida, cebola-roxa, tomate, pepino, folhas, limão e azeite.</p><p><b>Preparo:</b> misture a lentilha ainda morna aos vegetais e finalize com limão, azeite e ervas.</p></div></details>
+          <details><summary><span>04</span><div><strong>Sopa cremosa de abóbora e frango</strong><small>40 min • 4 porções</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> abóbora, frango desfiado, cebola, alho, couve e temperos naturais.</p><p><b>Preparo:</b> cozinhe a abóbora, bata parte do caldo e volte à panela com o frango e a couve.</p></div></details>
+          <details><summary><span>05</span><div><strong>Iogurte crocante com chia</strong><small>5 min • 1 porção</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> iogurte natural sem açúcar, chia, canela, morangos e castanhas.</p><p><b>Preparo:</b> monte em camadas e consuma na hora. Ajuste a fruta e a quantidade ao seu plano.</p></div></details>
+          <details><summary><span>06</span><div><strong>Berinjela recheada</strong><small>45 min • 4 porções</small></div></summary><div class="recipe-body"><p><b>Ingredientes:</b> berinjelas, carne moída magra ou lentilha, tomate, cebola, ervas e queijo opcional.</p><p><b>Preparo:</b> asse as metades, retire parte da polpa, misture ao recheio refogado e leve ao forno novamente.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="compras">
+      <div class="section-heading"><div><span class="kicker">Planeje uma vez</span><h2>Lista de compras inteligente</h2></div><p>Marque o que já colocou no carrinho. A seleção fica salva neste aparelho.</p></div>
+      <div class="shopping-layout"><div id="shopping-list" class="shopping-list"></div><aside class="prep-card"><img src="images/preparo-semanal.png" alt="Potes com refeições equilibradas preparadas para a semana"><div><span class="kicker">Preparo em 60 minutos</span><h3>Deixe a semana encaminhada</h3><ol><li>Asse uma proteína e uma assadeira de legumes.</li><li>Cozinhe uma leguminosa e um grão.</li><li>Higienize e seque folhas.</li><li>Separe lanches práticos.</li><li>Planeje primeiro os três dias seguintes.</li></ol><button id="reset-shopping" class="text-button">Desmarcar lista</button></div></aside></div>
+    </section>
+
+    <section class="section learn-section" id="aprender">
+      <div class="wrap">
+        <div class="section-heading"><div><span class="kicker">Entenda suas escolhas</span><h2>Pequenas decisões, mais clareza</h2></div><p>Conhecimento prático para interpretar rótulos, montar refeições e observar padrões.</p></div>
+        <div class="learn-grid">
+          <article class="learn-card"><span>01</span><h3>Carboidrato não é inimigo</h3><p>Tipo, quantidade, combinação e contexto importam. Associar fibras e proteínas pode tornar a refeição mais completa.</p></article>
+          <article class="learn-card"><span>02</span><h3>Leia o rótulo por inteiro</h3><p>Confira a porção, carboidratos totais, fibras, açúcares adicionados e lista de ingredientes — não apenas frases da embalagem.</p></article>
+          <article class="learn-card"><span>03</span><h3>Observe padrões</h3><p>Registre horário, refeição, movimento, sono e medicação. Um valor isolado conta menos que uma tendência bem documentada.</p></article>
+          <article class="learn-card"><span>04</span><h3>Tenha um plano para imprevistos</h3><p>Mantenha opções simples em casa e siga a orientação recebida para reconhecer e tratar hipoglicemia.</p></article>
+        </div>
+        <div class="faq"><h3>Perguntas frequentes</h3>
+          <details><summary>Preciso retirar todo o açúcar e carboidrato?</summary><p>Não existe uma regra única para todos. O planejamento deve considerar quantidade, qualidade, distribuição ao longo do dia, medicamentos e preferências. Faça mudanças com sua equipe.</p></details>
+          <details><summary>Posso trocar os alimentos do plano?</summary><p>Sim. Prefira trocas dentro de grupos semelhantes e preserve a estrutura da refeição. Alergias, doença renal, gestação ou outras condições exigem orientação individual.</p></details>
+          <details><summary>O diário define se minha glicose está boa ou ruim?</summary><p>Não. Ele organiza registros e mostra tendências. Somente sua equipe pode interpretar metas pessoais, diagnosticar ou ajustar tratamento.</p></details>
+          <details><summary>O que faço diante de um valor muito diferente do habitual?</summary><p>Siga o plano de ação combinado com sua equipe. Se houver sintomas importantes, piora rápida ou dúvida sobre urgência, procure atendimento de saúde.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap safety">
+      <div class="safety-icon">!</div><div><h2>Cuide-se com segurança</h2><p>O Regenera Vita é um material educativo. Ele não diagnostica, não calcula insulina, não substitui consulta e não orienta mudanças em medicamentos. Não altere doses, horários ou tratamento sem falar com um profissional habilitado.</p><p>Se você usa insulina ou medicamentos que podem causar hipoglicemia, combine previamente como ajustar alimentação e atividade física. Em situações urgentes ou com sintomas intensos, procure atendimento imediatamente.</p></div>
+    </section>
   </main>
-  <footer class="footer"><div class="shell"><strong>Regenera Vita • Plano de 14 Dias</strong><p>Material educativo de apoio à organização alimentar. Não substitui consulta com médico ou nutricionista.</p><p class="sources">Referências: <a href="https://diabetes.org/food-nutrition/meal-planning" target="_blank" rel="noopener">American Diabetes Association — planejamento de refeições</a> • <a href="https://diretriz.diabetes.org.br/terapia-nutricional-no-pre-diabetes-e-no-diabetes-mellitus-tipo-2/" target="_blank" rel="noopener">Sociedade Brasileira de Diabetes — terapia nutricional</a></p></div></footer>
+
+  <footer><div class="wrap footer-grid"><div class="brand footer-brand"><span class="brand-symbol">RV</span><span>Regenera Vita<small>Informação que cabe na rotina</small></span></div><div><strong>Fontes para continuar aprendendo</strong><a href="https://diretriz.diabetes.org.br/metas-de-controle-glicemico/" target="_blank" rel="noopener">Sociedade Brasileira de Diabetes — metas de controle</a><a href="https://diabetes.org/food-nutrition" target="_blank" rel="noopener">American Diabetes Association — alimentação e nutrição</a></div></div><div class="wrap footer-bottom">© Regenera Vita • Material educativo • Atualizado em 2026</div></footer>
 </body>
 </html>

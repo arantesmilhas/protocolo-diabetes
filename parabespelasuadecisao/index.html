@@ -15,6 +15,22 @@
   </head>
   <body class="bg-white text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">
     <div id="root"></div>
+    <script>
+      (() => {
+        const checkout = "https://pay.hotmart.com/D107841708I?checkoutMode=10";
+        const connectCheckout = () => {
+          document.querySelectorAll("a").forEach((link) => {
+            if (link.textContent.includes("QUERO O PROTOCOLO REGENERA VITA")) {
+              link.href = checkout;
+              link.onclick = null;
+              link.addEventListener("click", () => { window.location.href = checkout; }, { once: true });
+            }
+          });
+        };
+        new MutationObserver(connectCheckout).observe(document.getElementById("root"), { childList: true, subtree: true });
+        connectCheckout();
+      })();
+    </script>
   
 
 
